@@ -4,7 +4,7 @@ The exploratory data analysis conducted on the mushroom datasets provides insigh
 
 After we removed any Nan values, we alo conducted basic data cleaning such as one-hot encoding of our categorical features and output class. In addition to that, we used Chi-Squared tests and the SelectKBest library to determine the most significant features uin our dataset. In addition to that, we used Random Forests to determine the importance of various features, and from this we were able to determine the most significant features to impact the performance of the model, and to reduce the overall dimensionality of the model. We created multiple distibutions to determine how the classses are associated with the various features, such as seeing the distribution of the cap-shape values by the habitat of the various mushrooms. We also created a correlatioon matrix between the variosu features, to determine which of them are the most correlated and can affect each other. 
 
-
+----------------------------------------------------------------------------------------
 Below is a learning graph that compares the accuracy scores of the training set, the test set, and the cross validation set when using our model as we increase the set size to 35000. The graph shows that the accuracy score of the training set, the cross validation set, and the test set of our model are very close as we continue to increase the set size–in fact just thousandths away. This shows us that there isn't any overfitting. If there was overfitting, the scores would be wildly different. 
 ![image](./Learning_Curve_Graph.png)
 
