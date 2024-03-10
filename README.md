@@ -22,6 +22,34 @@ Below is a confusion matrix of the predicted habitat and the true habitat. Each 
 - g = grasses
 - d = woods
 
-![iamge](./Confusion_Matrix.png)
+![image](./Confusion_Matrix.png)
 
 The next two models we are thinking of using on this are random forest classification and k-nearest neighbors. We thought these were the best because random forest classification is likely to output an accurate prediction for classification problems because it uses multiple decision trees with various subsets of the dataset. The problem with random forest classification algoerithms is that they tend to overfit to the training dataset, so we will need to be careful when training our model.  As for k-nearest neighbors, given that all of our habitat labels correspond to a specific group, it will be easy to use a clustering algorithm to classify the various mushrooms. Clustering tends to be a very versatile method for classification and k-nearest neighbors is an efficient clustering algorithm that we can test with various parameters. 
+
+----------------------------------------------------------------------------------------
+## Milestone 4: Model 2 (KNN) and Evaluation
+
+After running our second model, K-nearest neighbors, on the data, below are the learning curve, confusion matrix, and classification report. 
+
+![image](./Learning_Curve_KNN.png)
+![image](./Confusion_Matrices_KNN.png)
+![image](./Classification_Report_KNN.png)
+
+From these visuals we can tell that as we increase the training set size, the accuracy of both the training set and the cross validation set increase, surpassing the test score. Overall, when compared to the first model, the accuracy increase amongst all sets. 
+
+The hyperparameter tuning that we did involved oversampling. This is because the the habitats for which the mushrooms were found was not uniform, and over 40,000 of the mushrooms were in the woods. Oversampling resulted in us getting a uniform distribution of the habitats in which the mushrooms were found. After oversampling, the B-cap shape distribution, C-Cap shape distribution, and F-cap shape distribution can be seen below. There were vastly more mushrooms having a stem width of 0 compared to stem width of 1.
+
+![image](./B-Cap_Shape_dist.png)
+![image](./C-Cap_Shape_dist.png)
+![image](./F-Cap_Shape_dist.png)
+
+Something notable about the hyperparameter tuning is that it resulted in the accuracy scores of our logistic regression model decreasing (as seen below). However, our K-nearest neighbors model was still more accurate than our first model with the initial data used.
+
+![image](./Learning_Curve_Log_Reg.png)
+
+When looking at our second model, we decided on continuing with our original plan of using random forest classification to see if we can increase accuracy even further. This is because **INSERT REASON**
+
+#### Conclusion: KNN
+We are happy with the results with our 2nd model, a K-nearest neighbors model using the 5 nearest neighbors. There was no overfitting, the accuracy score kept increasing with an increased training set size, and it did better than our first model. 
+
+To improve upon this model, we can **INSERT REASON**
