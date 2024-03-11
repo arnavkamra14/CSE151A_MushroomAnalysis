@@ -54,4 +54,4 @@ When looking at our second model, we decided on continuing with our original pla
 #### Conclusion: KNN
 We are happy with the results with our 2nd model, a K-nearest neighbors model using the 5 nearest neighbors. There was no overfitting, the accuracy score kept increasing with an increased training set size, and it did better than our first model. 
 
-To improve upon this model, we can use further 
+To improve upon this model, we can use further test our different amounts of nearest neighbors and see what value is most optimal
