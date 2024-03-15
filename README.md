@@ -2,18 +2,16 @@
 ### Introduction 
 Why chosen? why is it cool? General/Broader impact of having a good predictive mode. i.e. why is this important?
 ### Figures
-
+![image](./B-Cap_Shape_dist.png)
+![image](./C-Cap_Shape_dist.png)
+![image](./F-Cap_Shape_dist.png)
 ### Methods
 ##### Data Exploration 
 The exploratory data analysis conducted on the mushroom datasets provides insight into the distinguishing and classifying of a specific mushroom's habitat. The primary dataset, with 173 observations across 23 features, including cap dimensions, colors, shape, surface, and more, reveals details about biodiversity. It does contain a number of null values which are concentrated in about five features. The secondary dataset expands the scope with thousands of observations for stem dimensions, ring type, and cap shape, alongside other features, and is devoid of null data. We performed introductory visual and statistical analysis and saw a few patterns emerge, such as the distribution of cap diameters and color variations. These datasets have the potential to reveal discriminative features critical for distinguishing digestibility. Through careful data preprocessing—including cleaning, normalizing, and feature extraction—we aim to move closer to accurately distinguishing between edible and poisonous mushrooms.
 ##### Preprocessing 
-After we removed any Nan values, we also conducted basic data cleaning such as one-hot encoding of our categorical features and output class. In addition to that, we used Chi-Squared tests and the SelectKBest library to determine the most significant features in our dataset. In addition to that, we used Random Forests to determine the importance of various features, and from this, we were able to determine the most significant features to impact the performance of the model, and to reduce the overall dimensionality of the model. We created multiple distributions to determine how the classes are associated with the various features, such as seeing the distribution of the cap-shape values by the habitat of the various mushrooms. We also created a correlation matrix between the various features, to determine which of them are the most correlated and can affect each other.
+After we removed any Nan values, we also conducted basic data cleaning such as one-hot encoding of our categorical features and output class. In addition to that, we used Chi-Squared tests and the SelectKBest library to determine the most significant features in our dataset. In addition to that, we used Random Forests to determine the importance of various features. From this, we were able to determine the most significant features to impact the performance of the model and to reduce the overall dimensionality of the model. We created multiple distributions to determine how the classes are associated with the various features, such as seeing the distribution of the cap-shape values by the habitat of the various mushrooms. We also created a correlation matrix between the various features, to determine which of them are the most correlated and can affect each other.
 
-We also used SMOTE in oversampling our data points. This is because the habitats for which the mushrooms were found were not uniform, and over 40,000 of the mushrooms were in the woods. Oversampling resulted in a uniform distribution of the habitats in which the mushrooms were found. After oversampling, the B-cap shape distribution, C-Cap shape distribution, and F-cap shape distribution can be seen below. There were vastly more mushrooms that had a stem width of 0 compared to a stem width of 1.
-
-![image](./B-Cap_Shape_dist.png)
-![image](./C-Cap_Shape_dist.png)
-![image](./F-Cap_Shape_dist.png)
+We also used SMOTE in oversampling our data points. This is because the habitats for which the mushrooms were found were not uniform, and over 40,000 of the mushrooms were in the woods. Oversampling resulted in a uniform distribution of the habitats in which the mushrooms were found. After oversampling, the B-cap shape distribution, C-Cap shape distribution, and F-cap shape distribution can be seen above. There were vastly more mushrooms that had a stem width of 0 compared to a stem width of 1.
 
 ----------------------------------------------------------------------------------------
 ##### Model 1
