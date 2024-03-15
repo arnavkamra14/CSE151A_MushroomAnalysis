@@ -359,8 +359,10 @@ This is a confusion matrix of the predicted habitat and the true habitat. Each o
 - d = woods
 
 
-place holder for the classifcation report
+![image](./Random_Forest_Classification_Report.png)
 
+The first classification report belongs to the test data set and the next belongs to the training. The reason for the exclusion of the validation dataset is the fact that we are used grid search.
+From the reports we can see that we can be overfitting as the accuracy of the training report and higher than that of the test report's. To fix this overfitting perhaps we could've lowered the hyperparameter options max_depth to better generalize the data.
 
 
 
