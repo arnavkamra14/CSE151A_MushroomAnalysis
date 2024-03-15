@@ -173,7 +173,7 @@ X_train, X_temp, y_train, y_temp = train_test_split(X_selected_df, y_encoded, te
 # Secondary split: Of the 30% temp, split into 2/3 for validation (20% of total) and 1/3 for test (10% of total)
 X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=1/3, random_state=42)
 knn = KNeighborsClassifier(n_neighbors=5)
-knn.fit(X_train, y_train)
+knn.fit(X_train, y_train)```
 
 ```y_train_pred = knn.predict(X_train)
 y_val_pred = knn.predict(X_val)
