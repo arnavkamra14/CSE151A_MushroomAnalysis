@@ -175,7 +175,7 @@ X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=1/3, r
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)```
 
-```y_train_pred = knn.predict(X_train)
+y_train_pred = knn.predict(X_train)
 y_val_pred = knn.predict(X_val)
 y_test_pred = knn.predict(X_test)
 
@@ -201,9 +201,11 @@ y_pred = best_knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Test Accuracy with Best Model:", accuracy)
 print("Classification Report for Test Set:")
-print(classification_report(y_test, y_pred, zero_division=0)) ```
+print(classification_report(y_test, y_pred, zero_division=0)) 
 
+```
 
+----------------------------------------------------------------------------------------
 ##### Model 3
 Our goal was to get a comprehensive analysis of mushroom data, aiming to distinguish between various habitats using a Random Forest classifier. The process began with preprocessing the data, where we applied Label Encoding to transform the categorical target variable 'habitat' into a numeric format. To refine our feature set and enhance model performance, we employed the SelectKBest method with the chi-square score function to identify the top 9 features most relevant to our target variable, thus reducing dimensionality and focusing our analysis on the most significant predictors. Following feature selection, we prepared our data for modeling by splitting it into training and testing sets, ensuring a distribution that allows for both effective learning and unbiased evaluation of the model's performance on unseen data. This split was crucial for validating our model's ability to generalize beyond the training dataset.
 
@@ -236,8 +238,8 @@ best_estimator = grid_search.best_estimator_
 y_pred = best_estimator.predict(X_test)
 
 from sklearn.metrics import accuracy_score
-print(f"Test set accuracy: {accuracy_score(y_test, y_pred)}") ```
-```# Generating learning curves
+print(f"Test set accuracy: {accuracy_score(y_test, y_pred)}")
+# Generating learning curves
 train_sizes, train_scores, validation_scores = learning_curve(
     estimator=model,
     X=X_train,  # Use the training part of data here
@@ -379,6 +381,6 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
 - Daniel Carrascoza: 
 - Kavi Nelakonda:
 - Kevin Wong:
-- Steven Luong: Preprocessing and Random Forest Tree
+- Steven Luong: Preprocessing/Random Forest Tree/Formatting
 - Neil Sharma:
 - Rishabh Kalyanakumar:  
