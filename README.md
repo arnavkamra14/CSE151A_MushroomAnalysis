@@ -337,6 +337,31 @@ The confusion matrix visualization offered additional insights, presenting a cle
 The application of a Random Forest classifier, coupled with rigorous preprocessing, feature selection, and hyperparameter tuning, has proven to be highly effective in distinguishing mushroom habitats. The results not only highlight the model's accuracy and reliability but also its potential utility studies where such classification tasks are critical.
 
 
+Below are the learning curve, confusion matrix, and classification report. 
+
+![image](./Learning_Curve_RF.png)
+
+As we can see, the cross validation score is plateuing meaning that more data will not add to better performance. The training score is decreasing as more data is being added which is evident of it being the adaption to fitting more data and predicting on itself. The wide gap between the cross-validation score and the suggest some overfitting but the model gets better as generalizing as more data is added.
+
+![image](./Confusion_Matrix_RF.png)
+
+This is a confusion matrix of the predicted habitat and the true habitat. Each of the letters corresponds to the following:
+
+w = waste
+u = urban
+p = paths
+m = meadows
+l = leaves
+h = heaths
+g = grasses
+d = woods
+
+
+# place holder for the classifcation report
+
+
+
+
 ### Discussion
 Discussion section: This is where you will discuss the why, and your interpretation and your though process from beginning to end. This will mimic the sections you have created in your methods section as well as new sections you feel you need to create. You can also discuss how believable your results are at each step. You can discuss any short comings. It's ok to criticize as this shows your intellectual merit, as to how you are thinking about things scientifically and how you are able to correctly scrutinize things and find short comings. In science we never really find the perfect solution, especially since we know something will probably come up int he future (i.e. donkeys) and mess everything up. If you do it's probably a unicorn or the data and model you chose are just perfect for each other!
 Model 1: 
@@ -354,6 +379,6 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
 - Daniel Carrascoza: 
 - Kavi Nelakonda:
 - Kevin Wong:
-- Steven Luong:
+- Steven Luong: Preprocessing and Random Forest Tree
 - Neil Sharma:
 - Rishabh Kalyanakumar:  
