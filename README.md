@@ -357,7 +357,7 @@ g = grasses
 d = woods
 
 
-# place holder for the classifcation report
+place holder for the classifcation report
 
 
 
