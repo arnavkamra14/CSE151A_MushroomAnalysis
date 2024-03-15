@@ -46,6 +46,35 @@ Something notable about the hyperparameter tuning is that it resulted in the acc
 
 When looking at our second model, we decided to continue with our original plan of using random forest classification to see if we can increase accuracy even further. This is because random forest classification tends to be more accurate than KNN because of its nature as an ensemble model and its generally accurate performance, relative to K-nearest neighbors. 
 ##### Model 3
+
+''' from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y_encoded, test_size=0.2, random_state=42)
+
+param_grid = {
+    'n_estimators': [100, 200, 300], 
+    'max_depth': [None, 10, 20, 30],  
+    'min_samples_split': [2, 5, 10],  
+    'min_samples_leaf': [1, 2, 4]     
+}
+
+rf = RandomForestClassifier(random_state=42)
+grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2, scoring='accuracy')
+grid_search.fit(X_train, y_train)
+
+# Print the best parameters and the best score
+print(f"Best parameters found: {grid_search.best_params_}")
+print(f"Best cross-validation score achieved: {grid_search.best_score_}")
+
+# Use the best estimator to make predictions on the test set
+best_estimator = grid_search.best_estimator_
+y_pred = best_estimator.predict(X_test)
+
+from sklearn.metrics import accuracy_score
+print(f"Test set accuracy: {accuracy_score(y_test, y_pred)}") '''
 ### Results
 ##### Data Exploration
 ##### Preprocessing
