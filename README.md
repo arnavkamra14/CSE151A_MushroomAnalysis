@@ -47,7 +47,7 @@ Something notable about the hyperparameter tuning is that it resulted in the acc
 
 When looking at our second model, we decided to continue with our original plan of using random forest classification to see if we can increase accuracy even further. This is because random forest classification tends to be more accurate than KNN because of its nature as an ensemble model and its generally accurate performance, relative to K-nearest neighbors. 
 ##### Model 3
-
+[Link to Random Forest Notebook](https://github.com/arnavkamra14/CSE151A_MushroomAnalysis/blob/RandomForest/RandomForest.ipynb)
 ``` from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
