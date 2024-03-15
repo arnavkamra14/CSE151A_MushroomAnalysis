@@ -347,14 +347,14 @@ As we can see, the cross validation score is plateuing meaning that more data wi
 
 This is a confusion matrix of the predicted habitat and the true habitat. Each of the letters corresponds to the following:
 
-w = waste
-u = urban
-p = paths
-m = meadows
-l = leaves
-h = heaths
-g = grasses
-d = woods
+- w = waste
+- u = urban
+- p = paths
+- m = meadows
+- l = leaves
+- h = heaths
+- g = grasses
+- d = woods
 
 
 place holder for the classifcation report
