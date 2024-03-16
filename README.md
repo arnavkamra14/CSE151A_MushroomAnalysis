@@ -330,7 +330,7 @@ When looking at our second model, we decided to continue with our original plan 
 
 
 ##### Model 3
-The best parameter combination identified through GridSearchCV consisted of 300 trees in the forest, with no limitation on tree depth, and the minimum number of samples required to split a node and to be at a leaf node were kept at their default values of 2 and 1, respectively. This configuration achieved a best cross-validation score of approximately 94.51%.
+The best parameter combination identified through GridSearchCV consisted of 300 trees in the forest, and the minimum number of samples required to split a node and to be at a leaf node were kept at their default values of 2 and 1, respectively. This configuration achieved a best cross-validation score of approximately 94.51%.
 
 Upon applying this tuned model to the test dataset, we observed a test set accuracy of approximately 94.86%. This affirms the model's robustness and its effectiveness in classifying mushroom habitats accurately. The precision, recall, and f1-score metrics, detailed in the classification report for both the test and training sets, revealed high performance across all habitat classes, with particularly impressive scores for the more common habitats. This high level of accuracy across the board demonstrates the model's comprehensive learning and its capacity to make precise predictions.
 
