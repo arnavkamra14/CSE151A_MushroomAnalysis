@@ -394,16 +394,27 @@ In essence, this project has not only contributed valuable insights into the int
 
 ### Collaboration
 - Arnav Kamra:
+  
        1. Helped on inital ipynb notebook and Github repository creation.
+  
        2. Helped on generating project idea/proposal
+  
        3. Checking bugs and writeup for EDA/preprocessing
+  
        4. KNN Model/Model Visualizations
+  
        5. Github management (pull requests, file management, etc.)
+  
 - Vishwak Pabba:
+  
        1. Team leader: In charge of coordinating and making sure deadlines were met
+  
        2. Performed data exploration and performed SMOTE oversampling on the skewed output classes.
+  
        3. Analyzed and explained the importance of the various models in the write-up.
+  
        4. Edited and debugged model code
+  
 - Emily Better: EDA/feedback/write up
 - Manav Jairam: Worked on debugging the models and data preprocessing, also did hyperparameter testing on the KNN model. Asisted with the writeup.
 - Daniel Carrascoza: KNN model, created data visualizations, and helped with data preprocessing (oversampling).
