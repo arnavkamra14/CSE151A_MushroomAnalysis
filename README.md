@@ -403,6 +403,6 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
 - Daniel Carrascoza: 
 - Kavi Nelakonda: Write-ups, explaining visuals
 - Kevin Wong:
-- Steven Luong: Preprocessing/Random Forest Tree/Formatting
+- Steven Luong: Preprocessing/Random Forest Tree visuals and explanations/Formatting
 - Neil Sharma:
 - Rishabh Kalyanakumar:  
