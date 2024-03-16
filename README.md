@@ -343,7 +343,7 @@ Below are the learning curve, confusion matrix, and classification report.
 
 ![image](./Learning_Curve_RF.png)
 
-As we can see, the cross validation score is plateuing meaning that more data will not add to better performance. The training score is decreasing as more data is being added which is evident of it being the adaption to fitting more data and predicting on itself. The wide gap between the cross-validation score and the suggest some overfitting but the model gets better as generalizing as more data is added.
+As we can see, the cross-validation score is plateauing meaning that more data will not lead to better performance. The training score is decreasing as more data is being added which is evident of it being the adaption to fitting more data and predicting on itself. The wide gap between the cross-validation score and the training suggests some overfitting but the model gets better as generalizing as more data is added.
 
 ![image](./Confusion_Matrix_RF.png)
 
@@ -368,17 +368,39 @@ From the reports we can see that we can be overfitting as the accuracy of the tr
 
 ### Discussion
 Discussion section: This is where you will discuss the why, and your interpretation and your though process from beginning to end. This will mimic the sections you have created in your methods section as well as new sections you feel you need to create. You can also discuss how believable your results are at each step. You can discuss any short comings. It's ok to criticize as this shows your intellectual merit, as to how you are thinking about things scientifically and how you are able to correctly scrutinize things and find short comings. In science we never really find the perfect solution, especially since we know something will probably come up int he future (i.e. donkeys) and mess everything up. If you do it's probably a unicorn or the data and model you chose are just perfect for each other!
+
+EDA/Processing: 
+Our initial dive into the datasets underscored the importance of thorough data exploration in understanding the nuances and complexities of the data. The presence of null values in significant features prompted us to adopt a meticulous approach to data cleaning and preprocessing. This phase involved decisions like handling missing values and applying one-hot encoding to categorical features, which directly impacted the subsequent model performance. The decision to use SelectKBest for feature selection, based on chi-square tests, was pivotal in reducing dimensionality and focusing on the features most relevant to our target variable. This step not only streamlined our modeling process but also provided early insights into which mushroom characteristics might be most influential in habitat classification. The preprocessing steps, particularly the use of SMOTE for addressing class imbalance, highlight the critical need to carefully balance data to reflect real-world distributions without biasing the model. This balance is delicate, as over-representation of certain habitats could skew model predictions, leading to overfitting or under-representation of less common habitats.
 Model 1: 
+take this out??? idk
 The next two models we considered using on the data are random forest classification and k-nearest neighbors. We thought these were the best because random forest classification is likely to output an accurate prediction for classification problems because it uses multiple decision trees with various subsets of the dataset. The problem with random forest classification algorithms is that they tend to overfit to the training dataset, so we will need to be careful when training our model.  As for k-nearest neighbors, given that all of our habitat labels correspond to a specific group, it will be easy to use a clustering algorithm to classify the various mushrooms. Clustering tends to be a very versatile method for classification and k-nearest neighbors are an efficient clustering algorithm that we can test with various parameters. 
+Model Selection and Implementation:
+The transition from logistic regression to more complex models like K-Nearest Neighbors and Random Forest reflected an evolution in our approach to tackling the classification problem. The logistic regression model served as a baseline, providing a clear perspective on the data's behavior. Its relatively straightforward implementation allowed us to quickly assess the viability of our preprocessing efforts and set a benchmark for model performance.
+
+The exploration of K-Nearest Neighbors introduced the challenges and opportunities of parameter tuning, especially the selection of the number of neighbors, which significantly influenced the model's accuracy and generalizability. This phase underscored the value of model diversity in our analysis, highlighting how different models could offer insights into the data.
+
+Our eventual focus on the Random Forest model was a strategic choice driven by its performance and suitability for complex classification. The model's ability to handle complex, high-dimensional data and its intrinsic mechanisms for reducing overfitting made it an ideal candidate. The hyperparameter tuning phase- facilitated by GridSearchCV- was instrumental in refining the model to achieve optimal performance. This computationally intense process was crucial for navigating the trade-offs between model complexity, accuracy, and generalizability.
+
+Evaluation and Results: 
+The results from our models provided a great deal of information about the predictive power of the models themselves and the underlying patterns within the mushroom data. The accuracy, precision, recall, and f1-score metrics illuminated the strengths and weaknesses of each model across different habitat classes, offering a detailed view of their performance.
+
+The learning curve analysis offered further insights into the models' behavior as the training set size increased, providing valuable clues about the models' learning efficiency and their potential for over or underfitting. This analysis was particularly revealing for the Random Forest model, where the relationship between the training and validation scores highlighted areas for potential improvement.
 
 ### Conclusion
 This is where you do a mind dump on your opinions and possible future directions. Basically what you wish you could have done differently. Here you close with final thoughts
+
+Our journey into the world of mushroom classification through this project has revealed the capabilities and challenges of applying machine learning techniques in biological data analysis. By employing a variety of models, including logistic regression, K-Nearest Neighbors, and Random Forest, we navigated the intricacies of mushroom data, aiming to distinguish between differing mushroom habitats accurately. The Random Forest model emerged as a particularly effective tool, demonstrating notable accuracy in habitat prediction. However, we also learned about the importance of vigilance against overfitting in which models perform well on training data but decline with new, unseen data. 
+
+There are several avenues we could explore differently in future iterations. Diversifying the range of machine learning models could uncover more nuanced insights or improve prediction accuracy. A deeper preliminary analysis of the dataset, focusing on enhanced feature selection and engineering, could reveal more about the underlying patterns and relationships within the data. Expanding the dataset, either through the inclusion of more samples or by integrating additional features, could further enrich the models' learning environment, offering a wider foundation for predictions. 
+
+In essence, this project has not only contributed valuable insights into the intersection of mycology and data science but also illuminated a possible path for similar endeavors. It compellingly demonstrates how machine learning can bridge the gap between datasets and tangible, real-world applications. This offers us a glimpse into the potential for future research to further unravel the complexities of the natural world. Our experiences and findings lay a foundation for continued exploration, pushing the boundaries of what is possible when science and technology converge in pursuit of knowledge and understanding.
+
 ### Collaboration
- statement of contribution by each member. This will be taken into consideration when making the final grade for each member in the group. Did you work as a team? was there a team leader? project manager? coding? writer? etc. Please be truthful about this as this will determine individual grades in participation. There is no job that is better than the other. If you did no code but did the entire write up and gave feedback during the steps and collaborated then you would still get full credit. If you only coded but gave feedback on the write up and other things, then you still get full credit. If you managed everyone and the deadlines and setup meetings and communicated with teaching staff only then you get full credit. Every role is important as long as you collaborated and were integral to the completion of the project. If the person did nothing. they risk getting a big fat 0. Just like in any job, if you did nothing, you have the risk of getting fired. Teamwork is one of the most important qualities in industry and academia!!!
+
 Start with Name: Title: Contribution. If the person contributed nothing then just put in writing: Did not participate in the project.
 - Arnav Kamra:
 - Vishwak Pabba:
-- Emily Better: 
+- Emily Better: EDA/feedback/write up
 - Manav Jairam:
 - Daniel Carrascoza: 
 - Kavi Nelakonda: Write-ups, explaining visuals
