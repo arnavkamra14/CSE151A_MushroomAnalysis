@@ -1,6 +1,6 @@
 # CSE151A Mushroom Analysis Project 
 ### Introduction 
-The choice to focus on mushroom analysis in this project stems from a blend of biology, data science, and biodiversity conservation. Mushrooms, with their diverse species, some edible and others potentially lethal, present a unique challenge in terms of classification and identification. The ability to accurately predict whether a mushroom is edible or poisonous through machine learning models not only has direct implications for food safety but also contributes to the broader field of biological classification and environmental science.
+The choice to focus on mushroom analysis in this project stems from a blend of biology, data science, and biodiversity conservation. Mushrooms, with their diverse species, some edible and others potentially lethal, present a unique challenge in terms of classification and identification. The ability to accurately predict a mushroom's habitat based off its various features can be found, can be instrumental in developing a broader understanding of how the environment can affect how mushrooms developed, and where they can considered to be edible or inedible.
 
 The significance of this project extends beyond the immediate practicality of mushroom classification. Within it lies its ability to demonstrate how data and computer science can be applied to solve real-world problems in fields outside of traditional technology sectors. By leveraging the vast biodiversity of mushrooms and the detailed data available on their physical characteristics, this project showcases the power of machine learning in enhancing our understanding of the natural world. A predictive model with high accuracy can significantly reduce the risk of mushroom poisoning incidents, which annually affect thousands of people worldwide, sometimes with fatal outcomes.
 
@@ -14,7 +14,7 @@ In essence, this project is not only intriguing because of its application of ad
 ![image](./F-Cap_Shape_dist.png)
 ### Methods
 ##### Data Exploration 
-Our initial approach involved performing exploratory data analysis (EDA) on the mushroom datasets to gain insights into the distinguishing characteristics that could help distinguish a mushroom's habitat and edibility. These datasets have the potential to reveal discriminative features critical for distinguishing digestibility. Through careful data preprocessing—including cleaning, normalizing, and feature extraction—we aim to move closer to accurately distinguishing between edible and poisonous mushrooms.
+Our initial approach involved performing exploratory data analysis (EDA) on the mushroom datasets to gain insights into the distinguishing characteristics that could help distinguish a mushroom's habitat. These datasets have the potential to reveal discriminative features critical for distinguishing the various habitats. Through careful data preprocessing—including cleaning, normalizing, and feature extraction—we aim to move closer to accurately distinguishing between the unique features that determine a mushroom's habitat.
 [View the EDA Notebook](https://github.com/arnavkamra14/CSE151A_MushroomAnalysis/blob/RandomForest/Mushroom_Classification_CSE151A.ipynb)
 ```
 df = pd.read_csv('secondary_data.csv',sep=';', on_bad_lines='skip')
@@ -385,7 +385,6 @@ The results from our models provided a great deal of information about the predi
 The learning curve analysis offered further insights into the models' behavior as the training set size increased, providing valuable clues about the models' learning efficiency and their potential for over or underfitting. This analysis was particularly revealing for the Random Forest model, where the relationship between the training and validation scores highlighted areas for potential improvement.
 
 ### Conclusion
-This is where you do a mind dump on your opinions and possible future directions. Basically what you wish you could have done differently. Here you close with final thoughts
 
 Our journey into the world of mushroom classification through this project has revealed the capabilities and challenges of applying machine learning techniques in biological data analysis. By employing a variety of models, including logistic regression, K-Nearest Neighbors, and Random Forest, we navigated the intricacies of mushroom data, aiming to distinguish between differing mushroom habitats accurately. The Random Forest model emerged as a particularly effective tool, demonstrating notable accuracy in habitat prediction. However, we also learned about the importance of vigilance against overfitting in which models perform well on training data but decline with new, unseen data. 
 
@@ -394,24 +393,22 @@ There are several avenues we could explore differently in future iterations. Div
 In essence, this project has not only contributed valuable insights into the intersection of mycology and data science but has also illuminated a possible path for similar endeavors. It demonstrates how machine learning can bridge the gap between datasets and tangible, real-world applications. This offers a glimpse into the potential for future research to further unravel the complexities of the natural world. Our experiences and findings lay a foundation for continued exploration, pushing the boundaries of what's possible when science and technology converge in pursuit of knowledge.
 
 ### Collaboration
-
-Start with Name: Title: Contribution. If the person contributed nothing then just put in writing: Did not participate in the project.
 - Arnav Kamra:
-       - Helped on inital ipynb notebook and Github repository creation.
-       - Helped on generating project idea/proposal
-       - Checking bugs and writeup for EDA/preprocessing
-       - KNN Model/Model Visualizations
-       - Github management (pull requests, file management, etc.)
+       1. Helped on inital ipynb notebook and Github repository creation.
+       2. Helped on generating project idea/proposal
+       3. Checking bugs and writeup for EDA/preprocessing
+       4. KNN Model/Model Visualizations
+       5. Github management (pull requests, file management, etc.)
 - Vishwak Pabba:
-       - Team leader: In charge of coordinating and making sure deadlines were met
-       - Performed data exploration and performed SMOTE oversampling on the skewed output classes.
-       - Analyzed and explained the importance of the various models in the write-up.
-       - Edited and debugged model code
+       1. Team leader: In charge of coordinating and making sure deadlines were met
+       2. Performed data exploration and performed SMOTE oversampling on the skewed output classes.
+       3. Analyzed and explained the importance of the various models in the write-up.
+       4. Edited and debugged model code
 - Emily Better: EDA/feedback/write up
-- Manav Jairam:
+- Manav Jairam: Worked on debugging the models and data preprocessing, also did hyperparameter testing on the KNN model. Asisted with the writeup.
 - Daniel Carrascoza: KNN model, created data visualizations, and helped with data preprocessing (oversampling).
 - Kavi Nelakonda: Write-ups, explaining visuals
-- Kevin Wong:
+- Kevin Wong: Worked on the logisitic regression model, writeup, and data preprocessing.
 - Steven Luong: Preprocessing/Random Forest Tree visuals and explanations/Formatting
-- Neil Sharma:
-- Rishabh Kalyanakumar:  
+- Neil Sharma: Worked on the Random Forest classifier and the data preprocessing, as well as the writeup.
+- Rishabh Kalyanakumar: Worked on daata preprocessing and KNN model.
