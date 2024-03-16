@@ -421,5 +421,5 @@ In essence, this project has not only contributed valuable insights into the int
 - Kavi Nelakonda: Write-ups, explaining visuals
 - Kevin Wong: Worked on the logisitic regression model, writeup, and data preprocessing.
 - Steven Luong: Preprocessing/Random Forest Tree visuals and explanations/Formatting
-- Neil Sharma: Worked on the Random Forest classifier and the data preprocessing, as well as the writeup.
+- Neil Sharma: Wrote the Random Forest classifier, including hyperparameter tuning, and the data preprocessing. Also worked on the writeup.
 - Rishabh Kalyanakumar: Worked on daata preprocessing and KNN model.
