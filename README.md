@@ -400,7 +400,7 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
 - Vishwak Pabba:
 - Emily Better: EDA/feedback/write up
 - Manav Jairam:
-- Daniel Carrascoza: 
+- Daniel Carrascoza: I wrote the KNN model, created data visualizations, and helped with data preprocessing (oversampling).
 - Kavi Nelakonda: Write-ups, explaining visuals
 - Kevin Wong:
 - Steven Luong: Preprocessing/Random Forest Tree visuals and explanations/Formatting
