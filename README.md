@@ -397,7 +397,13 @@ In essence, this project has not only contributed valuable insights into the int
 
 Start with Name: Title: Contribution. If the person contributed nothing then just put in writing: Did not participate in the project.
 - Arnav Kamra:
+       - Helped on inital ipynb notebook and Github repository creation.
+       - Helped on generating project idea/proposal
+       - Checking bugs and writeup for EDA/preprocessing
+       - KNN Model/Model Visualizations
+       - Github management (pull requests, file management, etc.)
 - Vishwak Pabba:
+       - Team leader: In charge of coordinating and making sure deadlines were met
 - Emily Better: EDA/feedback/write up
 - Manav Jairam:
 - Daniel Carrascoza: I wrote the KNN model, created data visualizations, and helped with data preprocessing (oversampling).
