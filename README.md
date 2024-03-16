@@ -404,9 +404,12 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
        - Github management (pull requests, file management, etc.)
 - Vishwak Pabba:
        - Team leader: In charge of coordinating and making sure deadlines were met
+       - Performed data exploration and performed SMOTE oversampling on the skewed output classes.
+       - Analyzed and explained the importance of the various models in the write-up.
+       - Edited and debugged model code
 - Emily Better: EDA/feedback/write up
 - Manav Jairam:
-- Daniel Carrascoza: I wrote the KNN model, created data visualizations, and helped with data preprocessing (oversampling).
+- Daniel Carrascoza: KNN model, created data visualizations, and helped with data preprocessing (oversampling).
 - Kavi Nelakonda: Write-ups, explaining visuals
 - Kevin Wong:
 - Steven Luong: Preprocessing/Random Forest Tree visuals and explanations/Formatting
